@@ -1,0 +1,19 @@
+Moritz,
+
+Attached is a file of theoretical CAT grating diffraction efficiencies as a function of energy.
+First column is energy in keV.
+The other columns are diffraction efficiencies of orders 2, 1, 0, -1, etc. through -12.
+The sign convention is such that blazing happens on the side of 0th order that has negative indices.
+The file name means silicon grating bars with a native oxide layer, grating period of 200 nm, incidence angle of 1.5 deg from normal, grating bar duty cycle of 20% (i.e. grating bars are 0.2*200 nm = 40 nm thick), and the grating is 6110 nm deep (i.e. height of the 40 nm thick grating bars).
+
+At most energies there will be more than one diffraction order with appreciable diffraction efficiency.  For calculations of resolving power in the past we did a simple weighting of orders by efficiency to get an average resolving power at a given energy.
+
+The diffraction efficiency changes gradually with incidence angle and grating period.  In a converging beam that means that large, flat grating "facets" (which is what we call a typical grating "tile", similar to the "facets" on the Chandra HETGS) will "see" a small range of incidence angles.  For resolving power calculations the variation in efficiency won't matter, and for effective area calculations this is a fairly small correction in most cases.  (But later on you might have to extrapolate between diffraction efficiencies for a range of incidence angles.)
+
+For period variations this is even less of an issue.  To high order you can safely assume that diffraction efficiency doesn't change when you vary the grating period by tens of ppm.
+
+The file assumes a perfect grating and ignores absorption from support structures.  As best-case scenario for the future we have assumed relative losses due to structural obscurations as small as on the order of 30% (TBR).
+
+Best,
+
+Ralf
